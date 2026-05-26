@@ -1,6 +1,6 @@
 # FolioFlow
 
-FolioFlow is a desktop image browser built with **Tauri v2 + Rust + Svelte + Vite**.
+FolioFlow is a desktop image browser built with **Tauri v2 + Rust + Svelte + Vite + Tailwind CSS**.
 
 ## Features
 
@@ -11,10 +11,10 @@ FolioFlow is a desktop image browser built with **Tauri v2 + Rust + Svelte + Vit
 
 ## Tech Stack
 
-- Frontend: Svelte + Vite
+- Frontend: Svelte + Vite + Tailwind CSS + bits-ui + lucide-svelte + svelte-motion
 - Backend: Rust + Tauri
 - Tauri plugins: dialog, fs, opener, store
-- Rust crates: kamadak-exif, walkdir, ignore, rand, rayon, tokio, serde, serde_json, dirs, dunce, sha2, base64
+- Rust crates: image, kamadak-exif, walkdir, ignore, rand, rayon, tokio, serde, serde_json, dirs, dunce, sha2, base64
 
 ## Development
 
