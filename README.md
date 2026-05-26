@@ -4,10 +4,13 @@ FolioFlow is a desktop image browser built with **Tauri v2 + Rust + Svelte + Vit
 
 ## Features
 
-- Open a folder and show images in a gallery
-- Toggle **short (sorted)** or **random** display mode
-- Toggle **subfolder scanning** on/off
-- Click an image card to open it with the system default app
+- Open Image (file picker + open with system app)
+- Open Folder
+- Gallery View: Grid / Masonry / Detail Preview
+- Random Mode: random image / random from subfolders
+- Short Mode: first N / recent / selected amount
+- Subfolder Mode: group by folder / folder cards / enter folder
+- Settings: theme / last folder / supported formats / thumbnail cache flag
 
 ## Tech Stack
 

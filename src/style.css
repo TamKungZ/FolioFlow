@@ -6,6 +6,11 @@
   background: radial-gradient(circle at top, #f7efe2 0%, #efe4d1 30%, #e2d4bd 100%);
 }
 
+:root[data-theme='midnight'] {
+  color: #f1f5f8;
+  background: radial-gradient(circle at top, #1f3340 0%, #1a2530 40%, #111827 100%);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -38,6 +43,20 @@ h1 {
   align-items: center;
 }
 
+.controls label {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+select,
+input[type='number'] {
+  border: 1px solid #b8a98c;
+  border-radius: 8px;
+  padding: 6px 8px;
+  background: #fff9ef;
+}
+
 button {
   border: none;
   padding: 10px 14px;
@@ -45,6 +64,12 @@ button {
   background: #2f5a78;
   color: #fff;
   cursor: pointer;
+}
+
+button.ghost {
+  background: #ffffff99;
+  color: #1f3340;
+  border: 1px solid #ccbda0;
 }
 
 #picked-path {
@@ -64,6 +89,18 @@ button {
   gap: 12px;
 }
 
+.masonry {
+  margin-top: 16px;
+  column-count: 4;
+  column-gap: 12px;
+}
+
+.masonry .card {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 12px;
+}
+
 .card {
   padding: 0;
   text-align: left;
@@ -81,6 +118,11 @@ button {
   display: block;
 }
 
+.masonry .card img {
+  height: auto;
+  max-height: 360px;
+}
+
 .card-info {
   padding: 8px;
   display: flex;
@@ -89,4 +131,83 @@ button {
 
 .card-info small {
   opacity: 0.7;
+}
+
+.settings {
+  margin-top: 16px;
+  padding: 12px;
+  border: 1px solid #d6c9b2;
+  border-radius: 12px;
+  background: #ffffff88;
+}
+
+.settings-row {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.settings-row.formats {
+  row-gap: 4px;
+}
+
+.inline {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.folder-cards {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.preview {
+  margin-top: 20px;
+  border: 1px solid #d6c9b2;
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.preview-head {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2d4bd;
+}
+
+.preview img {
+  width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+  background: #111827;
+}
+
+.preview-meta {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .masonry {
+    column-count: 1;
+  }
+
+  .shell {
+    padding: 14px;
+  }
 }
